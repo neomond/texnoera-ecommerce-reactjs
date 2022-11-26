@@ -1,0 +1,58 @@
+.showroom-wrapper {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.showroom-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 2.5rem;
+  margin-top: 4.5rem;
+  text-transform: uppercase;
+}
+
+.showroom-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showroomimg {
+  width: 450px;
+  height: 520px;
+}
+.showroomimg img {
+  width: 100%;
+}
+
+.showroomimg-1 {
+  margin-top: 3rem;
+}
+
+.showroomimg-3 {
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .showroomimg-2,
+  .showroomimg-3 {
+    display: none;
+  }
+  .showroomimg-1 {
+    margin-top: 0;
+  }
+  .showroomimg {
+    height: 100%;
+  }
+  .showroom-wrapper {
+    height: 100%;
+  }
+}

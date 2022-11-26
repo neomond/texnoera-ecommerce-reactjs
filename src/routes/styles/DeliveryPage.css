@@ -1,0 +1,162 @@
+.delivery-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.delivery-header {
+  padding-bottom: 2rem;
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+.delivery-content-1 {
+  display: flex;
+  gap: 50px;
+}
+
+.delivery-img {
+  width: 100%;
+}
+
+.delivery-img img {
+  width: 100%;
+}
+
+.delivery-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.delivery-info h4 {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.delivery-info p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #171717;
+}
+
+.delivery-info-item-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e3e4e4;
+}
+
+.delivery-info-item-top p {
+  width: 50%;
+  padding-bottom: 1rem;
+}
+
+.delivery-info-item-bottom {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery-info-item-bottom p {
+  width: 85%;
+  padding-bottom: 0.5rem;
+}
+
+.delivery-content-2-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 3rem 0;
+}
+
+.delivery-content-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 30px;
+  margin-bottom: 3rem;
+}
+
+.delivery-grid-info {
+  padding: 1rem 1.8rem;
+  border: 1px dashed #d1b59a;
+  width: 90%;
+}
+
+.delivery-grid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delivery-grid-header p {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.delivery-grid-description {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding: 1rem 0;
+  border-top: 1px dashed #d1b59a;
+}
+
+@media screen and (max-width: 768px) {
+  .delivery-wrapper {
+    width: 90%;
+  }
+  .delivery-content-1,
+  .delivery-content-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .delivery-content-2-header {
+    margin: 2rem 0;
+  }
+  .delivery-grid-info {
+    width: 100%;
+  }
+  .delivery-info h4 {
+    text-align: center;
+  }
+  .delivery-grid-header p {
+    font-size: 16px;
+    width: 75%;
+  }
+}

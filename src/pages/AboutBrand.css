@@ -1,0 +1,105 @@
+.about-brand-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+.aboutbrand-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  width: 95%;
+  margin: 0 auto;
+  /* height: 100vh; */
+}
+
+.aboutbrand-imgs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.main-about-img {
+  position: relative;
+  z-index: -1;
+  max-width: 700px;
+}
+
+.main-about-img img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+}
+
+.left-about-img {
+  position: absolute;
+  left: -20%;
+  top: -20%;
+}
+
+.right-about-img {
+  position: absolute;
+  right: -45%;
+  top: -20%;
+  z-index: -1;
+}
+
+.aboutbrand-text p {
+  width: 500px;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #171717;
+  padding-bottom: 1rem;
+}
+
+.aboutbrand-btn {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #c0c0c0;
+  display: flex;
+  align-items: center;
+}
+
+.aboutbrand-btn:hover {
+  color: #e1c4a9;
+  text-decoration: underline #e1c4a9;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutbrand-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  .main-about-img {
+    max-width: 400px;
+  }
+
+  .blank-img {
+    display: none;
+  }
+  .aboutbrand-text {
+    max-width: 400px;
+  }
+  .aboutbrand-text p {
+    width: 100%;
+  }
+}

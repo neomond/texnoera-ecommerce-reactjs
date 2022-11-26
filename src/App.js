@@ -1,23 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./pages/Navbar";
+import MainPage from "./routes/MainPage";
+import CatalogPage from "./routes/CatalogPage";
+import Footer from "./pages/Footer";
+import ShowRoomPage from "./routes/ShowRoomPage";
+import FittingPage from "./routes/FittingPage";
+import AboutTheBrandPage from "./routes/AboutTheBrandPage";
+import ContactsPage from "./routes/ContactsPage";
+import WishListPage from "./routes/WishListPage";
+import DeliveryPage from "./routes/DeliveryPage";
+import TestimonialsPage from "./routes/TestimonialsPage";
+import ProductPage from "./routes/ProductPage";
+import OrderingPage from "./routes/OrderingPage";
+import Nav from "./routes/Nav";
+
+import { AnimatePresence } from "framer-motion";
+import { CartProvider } from "./CartContext";
+import ProductDetails from "./routes/ProductDetails";
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CartProvider>
+        <Nav />
+        <AnimatePresence mode="wait">
+          <Routes key={location.pathname} location={location}>
+            <Route exact path="/" element={<MainPage />} />
+            <Route exact path="/showroom" element={<ShowRoomPage />} />
+            <Route exact path="/fitting" element={<FittingPage />} />
+            <Route
+              exact
+              path="/aboutthebrand"
+              element={<AboutTheBrandPage />}
+            />
+            <Route exact path="/contacts" element={<ContactsPage />} />
+            <Route exact path="*" element={<WishListPage />} />
+            <Route exact path="/delivery" element={<DeliveryPage />} />
+            <Route exact path="/testimonials" element={<TestimonialsPage />} />
+            <Route exact path="/catalog" element={<CatalogPage />} />
+            <Route exact path="/catalog/:id" element={<ProductDetails />} />
+            <Route exact path="/product" element={<ProductPage />} />
+            <Route exact path="/checkout" element={<OrderingPage />} />
+          </Routes>
+        </AnimatePresence>
+        <Footer />
+      </CartProvider>
     </div>
   );
 }

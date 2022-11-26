@@ -1,0 +1,341 @@
+.ordering-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.ordering-empty-wrapper {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ordering-head {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ordering-products-container {
+  padding: 30px 0;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ordering-products-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ordering-products-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.ordering-products-options select {
+  width: 135px;
+  height: 40px;
+  border: 1px solid #dadada;
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #b8b8b8;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.ordering-products-quantity {
+  display: flex;
+  align-items: center;
+}
+
+.ordering-products-quantity button {
+  padding: 8px 13px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #dadada;
+  background: transparent;
+  color: #d8d7d7;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.ordering-products-quantity button:hover {
+  background-color: #222222;
+  transition: all 0.3s ease-in-out;
+  /* border: none; */
+}
+
+.ordering-products-quantity span {
+  padding: 8px 13px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #dadada;
+  color: #d8d7d7;
+}
+
+.ordering-products-total {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #242424;
+}
+
+.ordering-products-delete {
+  cursor: pointer;
+}
+
+.ordering-products-left-img-container {
+  width: 120px;
+  height: 150px;
+}
+.ordering-products-left-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.ordering-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.ordering-form-header {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.ordering-form {
+  margin: 2rem 0;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 0.06em;
+  color: #a6a6a9;
+}
+
+.ordering-form textarea {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  /* line-height: 25px; */
+  letter-spacing: 0.06em;
+  color: #a6a6a9;
+  outline: none;
+}
+
+.ordering-form input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  /* text-transform: uppercase; */
+
+  outline: none;
+  padding-left: 1rem;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #dadada;
+  letter-spacing: 0.06em;
+}
+
+.ordering-form textarea {
+  padding: 1rem;
+  border: 1px solid #dadada;
+  width: 100%;
+}
+
+.ordering-form #check {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #dadada;
+  accent-color: #dbd4cd;
+  background-color: transparent;
+  margin: 1rem 0;
+}
+
+.ordering-form span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ordering-form-payment-head {
+  padding: 3rem 0 1rem 0;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #000000;
+}
+
+.inputs-radio {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 38px;
+  border-bottom: 1px solid #d7d7d7;
+}
+.inputs-radio input {
+  width: 15px;
+  accent-color: #000;
+}
+
+.inputs-radio span {
+  color: #000;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.total-amount-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 35px 0;
+}
+
+.total-amount-form p {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  color: #242424;
+  text-transform: uppercase;
+}
+
+.order-form-btn {
+  width: 100%;
+  height: 50px;
+  background-color: #242424;
+  color: #ffffff;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  border: 1px solid #272727;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.order-form-btn:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #dadada;
+  color: #222222;
+  border: #e1c4a9;
+}
+
+/* Formik classes */
+.form-checkout input.input-error,
+.form-checkout textarea.input-error,
+.form-checkout select.input-error {
+  border-color: #fc8181;
+}
+
+.order-form-btn:disabled {
+  opacity: 0.35;
+}
+.error {
+  color: #fc8181;
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: 0.25rem;
+}
+.submenu-cont-noprod {
+  padding-bottom: 3rem;
+  text-transform: uppercase;
+  /* border-bottom: 1px solid #eaeaea; */
+  font-size: 21px;
+  color: #746558;
+}
+
+@media screen and (max-width: 768px) {
+  .ordering-products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .ordering-products-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    gap: 14px;
+  }
+  .vscclose {
+    margin-left: 5.8rem;
+    font-size: 10px;
+  }
+  .ordering-products-total {
+    margin-right: 3.8rem;
+  }
+  .ordering-products-options {
+    width: 100%;
+  }
+  .ordering-products-options select {
+    width: 100px;
+    height: 30px;
+  }
+  .ordering-products-total {
+    font-size: 17px;
+  }
+  .ordering-products-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .ordering-products-quantity button,
+  .ordering-products-quantity span {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .submenu-cont-noprod {
+    text-align: center;
+    line-height: 28px;
+  }
+}

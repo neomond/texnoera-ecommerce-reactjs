@@ -1,0 +1,542 @@
+.product-current-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin: 50px auto;
+}
+
+.product-current-swiper {
+  width: 40%;
+}
+
+.product-current-slider {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 40px;
+  width: 470px;
+  height: 650px;
+}
+
+.product-current-slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.flex_row {
+  justify-content: flex-start;
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+.thumbnail {
+  padding-left: 20px;
+}
+
+.clicked {
+  border: 5px solid black;
+}
+
+.product-info-container {
+  width: 35%;
+}
+
+.product-head-desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.product-head-desc h4 {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #222222;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.product-head-desc p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #474646;
+}
+
+.product-sizes {
+  margin-bottom: 0.5rem;
+}
+
+.product-size-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.product-size-items p {
+  margin-bottom: 0.5rem;
+}
+
+.product-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.product-icons p {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #b59475;
+}
+
+.product-icons-left,
+.product-icons-right {
+  display: flex;
+  gap: 10px;
+}
+
+.product-size {
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #b59475;
+  border: 1px solid #d7b494;
+  padding: 15px 16px;
+}
+
+.product-size:hover {
+  background-color: #222222;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+}
+
+.product-btns {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.product-btn-first {
+  background: #242424;
+  border: 1px solid #242424;
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #f1f1f1;
+}
+
+.product-btn-first:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  color: #222222;
+}
+
+.product-btn-second {
+  background: transparent;
+  border: 1px solid #dddddd;
+  border-radius: 3px 3px 0px 0px;
+  width: 100%;
+  padding: 15px 0;
+  cursor: pointer;
+
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #585353;
+}
+
+.product-btn-second:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  color: #222222;
+}
+
+.accrodion {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.accordion-item {
+  background-color: transparent;
+  margin-bottom: 5px;
+  padding: 15px 20px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title h2,
+.title span {
+  cursor: pointer;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 41px;
+  color: #222222;
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  color: #242424;
+}
+
+.content.show {
+  /* padding: 10px 0; */
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+.products-more {
+  width: 90%;
+  margin: 6rem auto;
+}
+
+.products-right-container {
+  /* display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.products-more-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  letter-spacing: 0.05em;
+  color: #222222;
+  margin: 2rem 0;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  /* padding-left: 7.5%; */
+}
+
+.products-right-img {
+  margin-bottom: 1rem;
+}
+.products-right-img img {
+  width: 100%;
+}
+
+.products-right-product {
+  width: 260px;
+  height: 350px;
+}
+
+.products-right-items {
+  padding-top: 20px;
+}
+
+.products-right-product:hover {
+  scale: 1.01;
+  transform: translate(0.5rem, 0.5rem);
+  transition: all 0.5s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+.products-right-items div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-blocks-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 5rem;
+  width: 90%;
+  margin: 0 auto;
+  place-items: center;
+  padding: 5rem 0;
+}
+
+.product-blocks-wrapper h3 {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  padding-bottom: 2rem;
+}
+
+.prod-left-top-block {
+  width: 100%;
+  max-height: 470px;
+}
+
+.prod-left-top-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.prod-right-bottom-block {
+  width: 100%;
+  height: 540px;
+}
+
+.prod-right-bottom-block img {
+  width: 100%;
+  height: 100%;
+}
+
+.prod-right-top-block {
+  /* background-image: url("/src/assets/right-item.png");
+  background-repeat: no-repeat;
+  background-position: end; */
+  background-color: #242424;
+}
+
+.prod-right-top-block-container {
+  padding: 3.9rem 0 3rem 3rem;
+}
+
+.prod-left-bottom-block {
+  /* background-image: url("/src/assets/left-item.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: 100%; */
+  background-color: #242424;
+}
+
+.prod-right-top-block-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding-right: 2rem;
+}
+
+.prod-right-top-block-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  color: #c0a78f;
+  width: 95%;
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+}
+
+.prod-right-top-block-item span {
+  border: 2px solid #c0a78f;
+  padding: 0 5px;
+}
+
+.prod-left-bottom-block-item {
+  padding: 2rem 2rem 2rem 3rem;
+  max-height: 600px;
+}
+
+.prod-left-bottom-block p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #c0a78f;
+  margin-bottom: 2rem;
+}
+
+.prod-left-bottom-btn {
+  margin: 1.5rem;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background: #c0a78f;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  width: 75%;
+}
+
+.prod-left-bottom-btn:hover {
+  background-color: #dddddd;
+  color: #222222;
+  transition: all 0.5s ease-in-out;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .product-current-wrapper {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 15px;
+  }
+  .product-info-container {
+    width: 95%;
+  }
+  .product-current-slider {
+    width: 95%;
+    height: 100%;
+  }
+  .product-current-slider img {
+    border-radius: 0;
+  }
+  .product-size-items {
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .product-btn-first,
+  .product-btn-second {
+    width: 100%;
+  }
+  .product-size {
+    padding: 10px 11px;
+  }
+  .product-icons p {
+    width: 50%;
+    line-height: 18px;
+  }
+
+  .product-icons-left,
+  .product-icons-right {
+    display: flex;
+    align-items: center;
+  }
+  .products-right-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-right-product {
+    height: 100%;
+    width: 100%;
+  }
+  .products-right-items {
+    padding: 0.8rem 0 2rem 0;
+  }
+  .product-blocks-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .prod-right-top-block-items {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0.5rem;
+    max-height: 560px;
+  }
+
+  .prod-left-top-block {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 50px;
+    top: 4255px;
+  }
+
+  .prod-right-bottom-block {
+    position: absolute;
+    width: 250px;
+    height: 210px;
+    left: 30px;
+    top: 4490px;
+  }
+
+  .prod-right-top-block-container {
+    width: 100%;
+    position: relative;
+    padding: 3.9rem 0 3rem 1rem;
+  }
+  .prod-right-top-block-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.8rem;
+  }
+  .prod-right-top-block-item p {
+    margin-bottom: 0.8rem;
+  }
+
+  .prod-right-top-block-item span {
+    padding: 0 7px;
+  }
+  .prod-left-bottom-block {
+    background-color: transparent;
+    color: #222222;
+  }
+  .prod-left-bottom-block-item h3,
+  .prod-left-bottom-block-item p {
+    color: #222222;
+  }
+  .prod-left-bottom-block-item {
+    padding: 1rem 1.6rem;
+    padding-top: 30rem;
+  }
+  .prod-left-bottom-btn {
+    width: 100%;
+  }
+  .prod-left-bottom-btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "size": "40 ",
+    "chest": 80,
+    "waist": 60,
+    "hips": 88,
+    "sleeve": 40
+  },
+  {
+    "id": 2,
+    "size": "42",
+    "chest": 84,
+    "waist": 64,
+    "hips": 92,
+    "sleeve": 40
+  },
+
+  {
+    "id": 3,
+    "size": "44",
+    "chest": 88,
+    "waist": 68,
+    "hips": 96,
+    "sleeve": 40
+  },
+  {
+    "id": 4,
+    "size": "46",
+    "chest": 92,
+    "waist": 72,
+    "hips": 100,
+    "sleeve": 40
+  },
+  {
+    "id": 5,
+    "size": "48",
+    "chest": 96,
+    "waist": 76,
+    "hips": 104,
+    "sleeve": 41
+  }
+]

@@ -1,0 +1,178 @@
+.navbar {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.2rem;
+  /* Sticky menu*/
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  /* display: grid;
+  grid-template-columns: repeat(7, auto); */
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Futura Md BT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  transition: 0.3s all;
+}
+
+.nav-link h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.nav-link:hover {
+  color: #e1c4a9;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav-logo-navigation {
+  display: none;
+}
+.social-icons-responsive {
+  display: none;
+}
+
+.nav-right li {
+  position: relative;
+}
+.nav-right span {
+  position: absolute;
+  left: 25px;
+  bottom: 10px;
+  color: #000000;
+  font-size: 16px;
+}
+.nav-right a {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* CART HOVER ITEM */
+.cart-item {
+  display: inline-block;
+  position: relative;
+}
+
+.nav__menu-item img {
+  padding: 3px;
+}
+
+/* For Submenu Block */
+.nav__menu-item:hover .submenu-wrapper {
+  display: block;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .navbar {
+    /* position: relative; */
+    gap: 15px;
+    padding: 0 20px;
+    z-index: 99999;
+  }
+  .nav-logo-navigation {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .nav-logo-navigation h1 {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .nav-right {
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    transition: 0.5s all;
+    z-index: 9999;
+    height: 100vh;
+  }
+
+  .nav-links.active {
+    background: #fff;
+    left: 0;
+  }
+
+  .nav-item {
+    padding: 20px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid #e1c4a96f;
+  }
+
+  .nav-link {
+    color: #322e2e;
+  }
+
+  .nav-item-logo-letter {
+    display: none;
+  }
+
+  .nav-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #e1c4a9;
+  }
+
+  .nav-right {
+    color: #fff;
+  }
+
+  .social-icons-responsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 1rem;
+  }
+  .nav-link-responsive {
+    border: 1px solid #e1c4a9;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    padding: 15px;
+    color: #e1c4a9;
+  }
+  .nav__menu-item:hover .submenu-wrapper {
+    display: none;
+  }
+}

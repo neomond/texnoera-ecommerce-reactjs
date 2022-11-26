@@ -1,0 +1,197 @@
+.contacts-wrapper {
+  width: 85%;
+  margin: 3rem auto;
+  padding-bottom: 2rem;
+}
+
+.contacts-header p {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.contacts-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.contacts-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.5rem;
+  /* width: 50%;   */
+}
+
+.contacts-info-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.contacts-info-top p,
+.contacts-form p {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+/* .contacts-form-items {
+  display: grid;
+} */
+
+.contacts-form p {
+  padding-bottom: 1rem;
+}
+.contacts-form input {
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.contacts-form-items textarea {
+  padding: 1rem 0 0 1rem;
+  outline: none;
+}
+
+.contacts-info-top-item span {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.contacts-form-main {
+  width: 50%;
+  padding: 13px;
+  padding-left: 1rem;
+}
+
+.contacts-form-btn {
+  padding: 13px 1rem;
+  font-family: "FuturaMediumC";
+  width: 180px;
+  font-size: 13px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacts-form-btn:hover {
+  cursor: pointer;
+  text-decoration: underline #d7b494;
+  color: #d7b494;
+  background-color: #222222;
+  transition: all 0.3s ease-in;
+}
+
+.contacts-form-time {
+  padding: 13px;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.contacts-map-location {
+  width: 100%;
+}
+
+.contacts-map-current {
+  /* min-width: 600px;
+    min-height: 550px; */
+  width: 100%;
+  height: 550px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .contacts-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 2rem;
+  }
+
+  .contacts-info-top {
+    width: 100%;
+  }
+  .contacts-info-top-item span {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .contacts-info-top-item img {
+    width: 15px;
+    height: 15px;
+  }
+  .contacts-items-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1.5rem;
+  }
+
+  .contacts-form {
+    border: 1px dashed #b8b5b5;
+    padding: 40px 15px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .contacts-form p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .contacts-form-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contacts-form-items input {
+    width: 100%;
+  }
+
+  .contacts-form-items textarea {
+    padding: 1rem 0 0 1rem;
+    width: 100%;
+  }
+  .contacts-form-btn {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts-map-location {
+    width: 100vw;
+  }
+  .contacts-form input {
+    margin-bottom: 10px;
+  }
+}

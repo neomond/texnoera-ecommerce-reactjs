@@ -1,0 +1,185 @@
+.about-the-brand--wrapper {
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-the-brand--wrapper img {
+  width: 100%;
+}
+.about-the-brand--header p {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  text-transform: uppercase;
+}
+
+.about-the-brand--header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  padding-top: 3rem;
+}
+
+.about-the-brand--info {
+  display: flex;
+  gap: 60px;
+}
+
+.about-the-brand--info p {
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #171717;
+  padding-bottom: 2rem;
+}
+.about-the-brand--info img {
+  margin-bottom: 2rem;
+}
+
+.about-the-brand--info h4 {
+  margin-bottom: 1rem;
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.about-the-brand-advantages-wrapper {
+  background: #252831;
+  margin: 0;
+  padding: 2rem 0;
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+.about-the-brand--img {
+  width: 100%;
+}
+
+.about-the-brand-advantages-wrapper h3 {
+  font-family: "FuturaMediumC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+}
+
+.about-the-brand-advantages {
+  width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.about-the-brand-advantages-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.about-the-brand-advantages-item p {
+  width: 77%;
+  font-family: "HelveticaNeueCyr";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #c0a78f;
+}
+
+.about-the-brand-advantages-img img {
+  width: 44px;
+  height: 42px;
+}
+
+.img1 img {
+  width: 44px;
+  height: 47px;
+}
+
+.img2 img {
+  width: 32px;
+  height: 50px;
+}
+
+.img3 img {
+  width: 46px;
+  height: 46px;
+}
+
+.img4 img {
+  width: 60px;
+  height: 46px;
+}
+
+.img5 img {
+  width: 48px;
+  height: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-the-brand--wrapper {
+    width: 90%;
+    margin: 0 1rem;
+  }
+  .about-the-brand--img {
+    width: 300px;
+  }
+  .about-the-brand--info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .about-the-brand--info h4 {
+    text-align: center;
+  }
+  .about-the-brand--info p {
+    text-align: center;
+  }
+  .about-the-brand-advantages {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .about-the-brand-advantages-wrapper h3 {
+    padding-bottom: 2rem;
+  }
+  .about-the-brand-advantages-item p {
+    width: 85%;
+    padding-top: 0.5rem;
+  }
+}

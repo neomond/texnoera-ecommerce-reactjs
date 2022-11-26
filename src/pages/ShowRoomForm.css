@@ -1,0 +1,101 @@
+.showroom-form-wrapper {
+  margin: 0 auto;
+  width: 75%;
+  margin-bottom: 5rem;
+  border: 1px dashed #cbc8c8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showroom-form-logo {
+  margin-top: 3rem;
+  padding-bottom: 1.2rem;
+}
+
+.showroom-form-header {
+  margin-bottom: 2rem;
+}
+
+.showroom-form form {
+  width: 100%;
+}
+
+.showroom-form form {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.showroom-form input {
+  padding: 20px 1rem;
+  width: 25%;
+  margin-bottom: 1.5rem;
+}
+
+.btn-submit {
+  padding: 15px 1rem;
+  font-family: "FuturaMediumC";
+  width: 298px;
+  border: 1px solid #000000;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 15%;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  text-decoration: underline #d7b494;
+  color: #d7b494;
+  background-color: #222222;
+  transition: all 0.3s ease-in;
+}
+
+.showroom-form textarea:focus,
+.showroom-form input:focus {
+  outline: none;
+}
+
+.showroom-form textarea {
+  width: 60%;
+}
+.showroom-form textarea::placeholder {
+  padding: 1rem 0 0 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .showroom-form-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+  }
+  .showroom-form-header {
+    margin-bottom: 0.5rem;
+  }
+  .showroom-form {
+    padding: 1rem;
+  }
+
+  .showroom-form form {
+    margin-bottom: 2rem;
+  }
+
+  .showroom-form input {
+    display: flex;
+  }
+  .showroom-form input,
+  .showroom-form textarea {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .btn-submit {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}

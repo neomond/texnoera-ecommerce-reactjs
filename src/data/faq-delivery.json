@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "headerdata": "Is delivery available overseas ?",
+    "deliveryImage": "../assets/faq-img.png",
+    "info": "Yes, delivery abroad is carried out by courier service to the door. Delivery abroad is paid when placing an order, a fixed cost of 1,200 rubles."
+  },
+  {
+    "id": 2,
+    "headerdata": "How to select size ?",
+    "deliveryImage": "../assets/faq-img.png",
+    "info": "We help you choose the most accurate size according to the measurements: chest, waist and hips. Send us your measurements and we will choose your size correctly in 99% of cases."
+  },
+  {
+    "id": 3,
+    "headerdata": "How to try on ?",
+    "deliveryImage": "../assets/faq-img.png",
+    "info": "In Moscow, you can try on all the images in the showroom at Novaya Ploshchad, 8, building 2, 5th floor. Fitting in the regions of Russia is possible upon receipt by courier within 15 minutes."
+  },
+  {
+    "id": 4,
+    "headerdata": "What should I do if it does not fit me ?",
+    "deliveryImage": "../assets/faq-img.png",
+    "info": "If something does not fit, we will replace the size at our own expense, the client returns to our office on his own, the refund occurs within 3 days to the card with which the payment was made."
+  }
+]

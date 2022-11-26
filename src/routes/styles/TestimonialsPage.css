@@ -1,0 +1,144 @@
+.testimonials-wrapper {
+  margin: 4rem 0;
+}
+
+.testimonials-customers-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 6rem 0;
+  gap: 1rem;
+  width: 100%;
+}
+
+.testimonials-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.testimonials-form--items {
+  padding: 0 10rem;
+}
+
+.testimonials-img {
+  width: 260px;
+}
+
+.testimonials-img img {
+  width: 100%;
+}
+
+.testimonials-play-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 45px;
+}
+
+.testimonials-form-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-bottom: 1.8rem;
+}
+
+.testimonials-form {
+  border: 1px dashed #b8b5b5;
+  padding: 3.5rem 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.testimonials-form input {
+  padding: 18px 0 18px 16px;
+  width: 33%;
+}
+
+.testimonials-form textarea {
+  width: 66%;
+  padding: 1rem 0 0 1rem;
+}
+
+.testimonials-btn-submit {
+  padding: 15px 1rem;
+  font-family: "FuturaMediumC";
+  /* width: 298px; */
+  border: 1px solid #000000;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  width: 33%;
+}
+
+.testimonials-btn-submit:hover {
+  cursor: pointer;
+  text-decoration: underline #d7b494;
+  color: #d7b494;
+  background-color: #222222;
+  transition: all 0.3s ease-in;
+}
+
+.testimonials-header {
+  font-family: "FuturaBookC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #272727;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonials-item-none {
+    display: none;
+  }
+  .testimonials-item p {
+    display: none;
+  }
+  .testimonials-play-btn {
+    position: absolute;
+    right: 40%;
+    bottom: 38%;
+  }
+  .testimonials-play-btn img {
+    width: 55px;
+  }
+  .testimonials-form--items {
+    padding: 0;
+  }
+  .testimonials-form--items input,
+  .testimonials-form--items textarea,
+  .testimonials-form--items button {
+    width: 100%;
+  }
+  .testimonials-form--items textarea {
+    padding: 1rem 0 0 1rem;
+  }
+  .testimonials-form--items form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 13px;
+  }
+  .testimonials-form {
+    width: 90%;
+  }
+  .testimonials-btn-submit {
+    padding: 15px 1rem;
+  }
+}
