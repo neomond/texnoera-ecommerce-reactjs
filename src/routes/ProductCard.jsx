@@ -10,10 +10,10 @@ export const ProductCard = ({
   isDelete = false,
 }) => {
   const [isFavorite, setIsFavorite] = useState(false);
-
   const handleToggleFavorite = () => {
     setIsFavorite((prevIsFavorite) => !prevIsFavorite);
   };
+
   return (
     <>
       <Link to={`/catalog/${id}`} className="catalog-right-img">

@@ -36,7 +36,7 @@ function App() {
               element={<AboutTheBrandPage />}
             />
             <Route exact path="/contacts" element={<ContactsPage />} />
-            <Route exact path="/wishlist" element={<WishListPage />} />
+            <Route exact path="*" element={<WishListPage />} />
             <Route exact path="/delivery" element={<DeliveryPage />} />
             <Route exact path="/testimonials" element={<TestimonialsPage />} />
             <Route exact path="/catalog" element={<CatalogPage />} />
