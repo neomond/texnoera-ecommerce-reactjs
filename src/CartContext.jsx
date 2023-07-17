@@ -4,7 +4,10 @@ import { createContext } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
   const [total, setTotal] = useState(0);
 
   const addToCart = (product) => {
@@ -37,6 +40,8 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     calcTotal();
+    // Save cart to local storage whenever the cart changes
+    localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   const changeQuantity = (product, actionType) => {

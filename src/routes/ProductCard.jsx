@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import fav from "../assets/favorites.png";
-import { useContext } from "react";
-import { CartContext } from "../CartContext";
 import { IoMdHeartEmpty } from "react-icons/io";
 
 export const ProductCard = ({
@@ -21,7 +18,6 @@ export const ProductCard = ({
         <div>
           <p>{productName}</p>
           <Link to="/wishlist">
-            {/* <img src={fav} alt="" /> */}
             <IoMdHeartEmpty
               className="catalog-right-wishlist"
               onMouseOver={({ target }) => (target.style.color = "#E1C4A9")}
