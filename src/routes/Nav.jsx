@@ -117,7 +117,7 @@ const Nav = () => {
       <div className="nav-top-part">
         <ul className="nav-right">
           <li>
-            <Link to="/*">
+            <Link to="/wishlist">
               <IoMdHeartEmpty
                 style={{
                   width: "25px",

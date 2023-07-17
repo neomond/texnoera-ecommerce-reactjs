@@ -23,15 +23,37 @@ export const FavoritesProvider = ({ children }) => {
   };
 
   useEffect(() => {
+    // Save favorites to local storage whenever it changes
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);
+
+  // Function to update the color of the heart icon in the local storage
+  const updateHeartIconColor = (id, isFavorite) => {
+    const savedFavorites = JSON.parse(localStorage.getItem("favorites"));
+    const updatedFavorites = savedFavorites.map((product) =>
+      product.id === id ? { ...product, isFavorite } : product
+    );
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
+  // Retrieve selected items from local storage on initial render
+  useEffect(() => {
+    const savedFavorites = JSON.parse(localStorage.getItem("favorites"));
+    setFavorites(savedFavorites || []);
+  }, []);
 
   return (
     <FavoritesContext.Provider
       value={{
         favorites,
-        addToFavorites,
-        removeFromFavorites,
+        addToFavorites: (product) => {
+          addToFavorites(product);
+          updateHeartIconColor(product.id, true);
+        },
+        removeFromFavorites: (productId) => {
+          removeFromFavorites(productId);
+          updateHeartIconColor(productId, false);
+        },
       }}
     >
       {children}

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { IoMdHeartEmpty } from "react-icons/io";
+import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
+import { useFavorites } from "../FavoritesContext";
 
 export const ProductCard = ({
   id,
@@ -9,11 +10,32 @@ export const ProductCard = ({
   imageUrl,
   isDelete = false,
 }) => {
-  const [isFavorite, setIsFavorite] = useState(false);
-  const handleToggleFavorite = () => {
-    setIsFavorite((prevIsFavorite) => !prevIsFavorite);
+  const { addToFavorites, removeFromFavorites, favorites } = useFavorites();
+  const isFavorite = favorites.some((product) => product.id === id);
+
+  const [heartIconColor, setHeartIconColor] = useState(
+    isFavorite ? "#d32f2f" : "black"
+  );
+  const updateHeartIconColor = (isFavorite) => {
+    setHeartIconColor(isFavorite ? "#d32f2f" : "black");
   };
 
+  const handleToggleFavorite = () => {
+    if (isFavorite) {
+      // If already in favorites, remove it
+      removeFromFavorites(id);
+      updateHeartIconColor(false);
+    } else {
+      // If not in favorites, add it
+      addToFavorites({
+        id,
+        productName,
+        price,
+        imageUrl,
+      });
+      updateHeartIconColor(true);
+    }
+  };
   return (
     <>
       <Link to={`/catalog/${id}`} className="catalog-right-img">
@@ -23,19 +45,20 @@ export const ProductCard = ({
         <div>
           <p>{productName}</p>
           <Link>
-            {/* Heart icon */}
             {isFavorite ? (
-              <IoMdHeartEmpty
+              <IoMdHeart
                 className="catalog-right-wishlist filled"
-                onMouseOver={({ target }) => (target.style.color = "#E1C4A9")}
-                onMouseOut={({ target }) => (target.style.color = "#E1C4A9")}
+                style={{ color: heartIconColor }}
+                onMouseOver={() => setHeartIconColor("#d32f2f")}
+                onMouseOut={() => setHeartIconColor("#d32f2f")}
                 onClick={handleToggleFavorite}
               />
             ) : (
               <IoMdHeartEmpty
                 className="catalog-right-wishlist"
-                onMouseOver={({ target }) => (target.style.color = "#E1C4A9")}
-                onMouseOut={({ target }) => (target.style.color = "black")}
+                style={{ color: heartIconColor }}
+                onMouseOver={() => setHeartIconColor("#d32f2f")}
+                onMouseOut={() => setHeartIconColor("black")}
                 onClick={handleToggleFavorite}
               />
             )}
